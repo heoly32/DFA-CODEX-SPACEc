@@ -1,0 +1,30 @@
+# Python environment for notebooks 2, 4 and 5 (SPACEc analysis).
+# The original analysis ran in a conda env named "spacec_08222025" (Python 3.10).
+# Versions below are left unpinned; for an exact lock file, export the original env:
+#   conda env export -n spacec_08222025 --no-builds > envs/spacec_py310.lock.yml
+name: spacec
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - graphviz
+  - libvips
+  - pyvips
+  - openslide-python
+  - jupyterlab
+  - ipykernel
+  - pip:
+      - spacec
+      - scanpy
+      - anndata
+      - leidenalg
+      - louvain
+      - fcsparser
+      - openpyxl
+      - seaborn
+      - statannotations
+      - statsmodels
+      - scikit-learn
+      - scipy
+      - networkx

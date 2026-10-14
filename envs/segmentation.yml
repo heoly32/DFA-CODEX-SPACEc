@@ -1,0 +1,15 @@
+# Environment for scripts/segmentation.py (Mesmer / DeepCell).
+# Usage: conda env create -f envs/segmentation.yml && conda activate segmentation
+name: segmentation
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - tifffile
+  - scikit-image
+  - tqdm
+  - pip:
+      - deepcell

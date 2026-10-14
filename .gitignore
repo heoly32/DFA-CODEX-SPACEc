@@ -1,0 +1,29 @@
+# --- Data (never commit raw / patient-level data) ---
+*.fcs
+*.tif
+*.tiff
+*.h5ad
+*.csv
+*.tsv
+*.xlsx
+!resources/*.xlsx
+DATA/
+Analysis/
+
+# --- Outputs ---
+*.png
+*.pdf
+*.log
+
+# --- Python / Jupyter ---
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# --- R ---
+.Rhistory
+.RData
+.Rproj.user/
+
+# --- OS ---
+.DS_Store
